@@ -1,0 +1,56 @@
+{
+	"doctype": "DocType",
+	"name": "Membership Plan",
+	"module": "Gym Membership",
+	"custom": 0,
+	"is_submittable": 0,
+	"editable_grid": 1,
+	"engine": "InnoDB",
+	"field_order": [
+		"plan_name",
+		"billing_interval",
+		"price",
+		"description"
+	],
+	"fields": [
+		{
+			"fieldname": "plan_name",
+			"fieldtype": "Data",
+			"in_list_view": 1,
+			"label": "Plan Name",
+			"reqd": 1
+		},
+		{
+			"fieldname": "billing_interval",
+			"fieldtype": "Select",
+			"in_list_view": 1,
+			"label": "Billing Interval",
+			"options": "Monthly\nQuarterly\nYearly\nDaily",
+			"reqd": 1
+		},
+		{
+			"fieldname": "price",
+			"fieldtype": "Currency",
+			"in_list_view": 1,
+			"label": "Price",
+			"reqd": 1
+		},
+		{
+			"fieldname": "description",
+			"fieldtype": "Text",
+			"label": "Description"
+		}
+	],
+	"permissions": [
+		{
+			"role": "System Manager",
+			"read": 1,
+			"write": 1,
+			"create": 1,
+			"delete": 1,
+			"submit": 0,
+			"cancel": 0,
+			"amend": 0
+		}
+	]
+}

@@ -1,0 +1,74 @@
+{
+	"doctype": "DocType",
+	"name": "Gym Membership",
+	"module": "Gym Membership",
+	"custom": 0,
+	"is_submittable": 1,
+	"editable_grid": 1,
+	"engine": "InnoDB",
+	"field_order": [
+		"member",
+		"membership_plan",
+		"start_date",
+		"end_date",
+		"status",
+		"amount"
+	],
+	"fields": [
+		{
+			"fieldname": "member",
+			"fieldtype": "Link",
+			"in_list_view": 1,
+			"label": "Member",
+			"options": "Gym Member",
+			"reqd": 1
+		},
+		{
+			"fieldname": "membership_plan",
+			"fieldtype": "Link",
+			"in_list_view": 1,
+			"label": "Membership Plan",
+			"options": "Membership Plan",
+			"reqd": 1
+		},
+		{
+			"fieldname": "start_date",
+			"fieldtype": "Date",
+			"in_list_view": 1,
+			"label": "Start Date",
+			"reqd": 1
+		},
+		{
+			"fieldname": "end_date",
+			"fieldtype": "Date",
+			"in_list_view": 1,
+			"label": "End Date",
+			"reqd": 1
+		},
+		{
+			"fieldname": "status",
+			"fieldtype": "Select",
+			"in_list_view": 1,
+			"label": "Status",
+			"options": "Draft\nActive\nExpired\nCancelled",
+			"default": "Draft"
+		},
+		{
+			"fieldname": "amount",
+			"fieldtype": "Currency",
+			"label": "Amount"
+		}
+	],
+	"permissions": [
+		{
+			"role": "System Manager",
+			"read": 1,
+			"write": 1,
+			"create": 1,
+			"delete": 1,
+			"submit": 1,
+			"cancel": 1,
+			"amend": 1
+		}
+	]
+}

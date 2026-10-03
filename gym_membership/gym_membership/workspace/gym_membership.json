@@ -1,0 +1,12 @@
+{
+  "doctype": "Workspace",
+  "name": "Gym Membership",
+  "module": "Gym Membership",
+  "label": "Gym Membership",
+  "title": "Gym Membership",
+  "public": 1,
+  "is_standard": 1,
+  "icon": "tool",
+  "content": "[{\"type\": \"header\", \"data\": {\"text\": \"Gym Membership\", \"col\": 12}}, {\"type\": \"paragraph\", \"data\": {\"text\": \"Workspace for the Gym Membership module.\", \"col\": 12}}]",
+  "links": []
+}

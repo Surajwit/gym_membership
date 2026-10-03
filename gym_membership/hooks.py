@@ -1,0 +1,6 @@
+app_name = "gym_membership"
+app_title = "Gym Membership"
+app_publisher = "Gym Membership"
+app_description = "Gym Membership Management application for Phase 1 creation"
+app_email = "dev@example.com"
+app_license = "MIT"

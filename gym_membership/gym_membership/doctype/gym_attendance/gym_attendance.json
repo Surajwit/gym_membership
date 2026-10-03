@@ -1,0 +1,57 @@
+{
+	"doctype": "DocType",
+	"name": "Gym Attendance",
+	"module": "Gym Membership",
+	"custom": 0,
+	"is_submittable": 0,
+	"editable_grid": 1,
+	"engine": "InnoDB",
+	"field_order": [
+		"member",
+		"date",
+		"check_in_time",
+		"gym_membership"
+	],
+	"fields": [
+		{
+			"fieldname": "member",
+			"fieldtype": "Link",
+			"in_list_view": 1,
+			"label": "Member",
+			"options": "Gym Member",
+			"reqd": 1
+		},
+		{
+			"fieldname": "date",
+			"fieldtype": "Date",
+			"in_list_view": 1,
+			"label": "Date",
+			"reqd": 1
+		},
+		{
+			"fieldname": "check_in_time",
+			"fieldtype": "Time",
+			"in_list_view": 1,
+			"label": "Check-In Time",
+			"reqd": 1
+		},
+		{
+			"fieldname": "gym_membership",
+			"fieldtype": "Link",
+			"label": "Gym Membership",
+			"options": "Gym Membership"
+		}
+	],
+	"permissions": [
+		{
+			"role": "System Manager",
+			"read": 1,
+			"write": 1,
+			"create": 1,
+			"delete": 1,
+			"submit": 0,
+			"cancel": 0,
+			"amend": 0
+		}
+	]
+}

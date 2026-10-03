@@ -1,0 +1,10 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Package metadata
+*.egg-info/
+
+# Editor / OS files
+.vscode/
+.DS_Store
